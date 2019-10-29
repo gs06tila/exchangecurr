@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { CurrentValueComponent } from './current-value/current-value.component';
+import { CurrencyService } from './currency/currency.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentValueComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CurrencyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
