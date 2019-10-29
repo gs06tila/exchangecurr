@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 8080",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +22,10 @@
     "@angular/router": "~8.2.12",
     "@ng-bootstrap/ng-bootstrap": "^5.1.2",
     "angular-progress-bar": "^1.0.9",
+    "express": "^4.17.1",
     "moment": "^2.24.0",
     "ngx-progressbar": "^2.1.1",
+    "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
