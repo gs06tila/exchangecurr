@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CurrentValueComponent } from './current-value/current-value.component';
-import { CurrencyService } from './currency/currency.service'
+import { CurrencyService } from './currency/currency.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { CurrencyService } from './currency/currency.service'
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [CurrencyService],
   bootstrap: [AppComponent]

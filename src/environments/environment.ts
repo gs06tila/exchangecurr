@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  appId: 'EZG0LAS0TVEZ8RHN',
+  appId: 'demo',
   baseUrl: 'https://www.alphavantage.co/query?'
 };
 
